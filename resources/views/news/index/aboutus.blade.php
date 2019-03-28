@@ -7,10 +7,10 @@
           <div class="row justify-content-center">
             <div class="col-lg-6">
               <div class="banner_content text-center">
-                <h2>About Us</h2>
+                <h2>Giới thiệu</h2>
                 <div class="page_link">
-                  <a href="index.html">Home</a>
-                  <a href="about-us.html">About Us</a>
+                  <a href="{{ route('news.index.index') }}">Trang chủ</a>
+                  <a href="{{ route('news.index.aboutus') }}">Giới thiệu</a>
                 </div>
               </div>
             </div>
@@ -21,27 +21,28 @@
     <!--================End Home Banner Area =================-->
 
     <!--================ Start About Area =================-->
-    <section class="about_area section_gap">
+    <section class="about_area section_gap py-3">
       <div class="container">
         <div class="row h_blog_item">
           <div class="col-lg-6">
             <div class="h_blog_img">
-              <img class="img-fluid" src="/templates/news/img/about.png" alt="" />
+              <img class="img-fluid" src="/templates/news/img/du-lich-dao-ly-son-quang-ngai-lysontrip-1.jpg" alt="Du lịch Lý Sơn" />
             </div>
           </div>
           <div class="col-lg-6">
             <div class="h_blog_text">
               <div class="h_blog_text_inner left right">
-                <h4>Welcome to our Institute</h4>
+                <h4>Chào mừng bạn đến với Lý Sơn Trip</h4>
                 <p>
-                  Subdue whales void god which living don't midst lesser
-                  yielding over lights whose. Cattle greater brought sixth fly
-                  den dry good tree isn't seed stars were.
+                  Lời đầu tiên chúng tôi xin cảm ơn quý khách đã tin tưởng và ủng hộ dịch
+                  vụ của chúng tôi. Chúng tôi hy vọng dịch vụ của chúng tôi có thể nhận được
+                  sự ủng hộ của tất cả mọi người đặc biệt là khách du lịch trên toàn quốc.
                 </p>
                 <p>
-                  Subdue whales void god which living don't midst lesser yieldi
-                  over lights whose. Cattle greater brought sixth fly den dry
-                  good tree isn't seed stars were the boring.
+                  Chúng tôi tự tin cung cấp những dòng xe mới, không hư hỏng với giá thuê đảm bảo
+                  cạnh tranh và rẻ hơn so với thị trường. Ngoài ra chúng tôi còn cung cấp những tour du lịch
+                  Lý Sơn 2 ngày 1 đêm, 3 ngày 2 đêm giá rẻ thời gian thoải mái để tiện phục vụ quý khách. Mọi
+                  chi tiết xin liên hệ hot line: 1800 0079 (miễn phí).
                 </p>
               </div>
             </div>
@@ -52,54 +53,52 @@
     <!--================ End About Area =================-->
 
     <!--================ Start Feature Area =================-->
-    <section class="feature_area section_gap_top title-bg">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-5">
-            <div class="main_title">
-              <h2 class="mb-3 text-white">Awesome Feature</h2>
-              <p>
-                Replenish man have thing gathering lights yielding shall you
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="single_feature">
-              <div class="icon"><span class="flaticon-student"></span></div>
-              <div class="desc">
-                <h4 class="mt-3 mb-2">Scholarship Facility</h4>
-                <p>
-                  One make creepeth, man bearing theira firmament won't great
-                  heaven
-                </p>
+    <section class="">
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 mt-4">
+                <div class="shadow p-3 card-icon">
+                  <div class="icon text-center"><i class="fas fa-building icon-custom"></i></div>
+                  <div class="desc text-center">
+                    <p class="mt-3 mb-2 text-with-divider">Khách sạn</p>
+                    <p>
+                      khách sạn giá rẻ, code giảm giá tại Lý Sơn
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="single_feature">
-              <div class="icon"><span class="flaticon-book"></span></div>
-              <div class="desc">
-                <h4 class="mt-3 mb-2">Sell Online Course</h4>
-                <p>
-                  One make creepeth, man bearing theira firmament won't great
-                  heaven
-                </p>
+              <div class="col-lg-3 col-md-6 mt-4">
+                <div class="shadow p-3 card-icon">
+                  <div class="icon text-center"><i class="fas fa-plane-departure icon-custom"></i></div>
+                  <div class="desc text-center">
+                    <p class="mt-3 mb-2 text-with-divider">Máy bay</p>
+                    <p>
+                      Vé máy bay giá rẻ, thông tin khuyến mãi
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="single_feature">
-              <div class="icon"><span class="flaticon-earth"></span></div>
-              <div class="desc">
-                <h4 class="mt-3 mb-2">Global Certification</h4>
-                <p>
-                  One make creepeth, man bearing theira firmament won't great
-                  heaven
-                </p>
+              <div class="col-lg-3 col-md-6 mt-4">
+                <div class="shadow p-3 card-icon">
+                  <div class="icon text-center"><i class="fas fa-car icon-custom"></i></div>
+                  <div class="desc text-center">
+                    <p class="mt-3 mb-2 text-with-divider">Xe du lịch</p>
+                    <p>
+                      Thuê xe du lịch giá rẻ, ưu đãi thuê xe tới Lý Sơn
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 mt-4">
+                <div class="shadow p-3 card-icon">
+                  <div class="icon text-center"><i class="fas fa-map-marked-alt icon-custom"></i></div>
+                  <div class="desc text-center">
+                    <p class="mt-3 mb-2 text-with-divider">Tàu biển đông</p>
+                    <p>
+                      Vé tàu super biển đông, đi từ cảng Sa Kỳ đến Lý Sơn
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -114,114 +113,100 @@
         <div class="row justify-content-center">
           <div class="col-lg-5">
             <div class="main_title">
-              <h2 class="mb-3">Client say about me</h2>
-              <p>
-                Replenish man have thing gathering lights yielding shall you
-              </p>
+              <h2 class="mb-3">Đánh giá từ khách hàng</h2>
             </div>
           </div>
         </div>
 
         <div class="row">
           <div class="testi_slider owl-carousel">
-            <div class="testi_item">
+            <div class="testi_item shadow">
               <div class="row">
-                <div class="col-lg-4 col-md-6">
-                  <img src="/templates/news/img/testimonials/t1.jpg" alt="" />
-                </div>
-                <div class="col-lg-8">
+                <div class="col-12">
                   <div class="testi_text">
-                    <h4>Elite Martin</h4>
-                    <p>
-                      Him, made can't called over won't there on divide there
-                      male fish beast own his day third seed sixth seas unto.
-                      Saw from
-                    </p>
+                    <p class="color-secondary" style="font-size:25px;">Anh Nguyễn Thành Trung</p>
+                    <div class="d-flex flex-row reviews justify-content-between">
+                        <span>Khách đặt xe du lịch Lý Sơn</span>
+                        <div class="star color-primary">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="pt-3"><span style="font-size:30px;">"</span>
+                      Lý Sơn Trip là một dịch vụ tốt, xe ở đây mới, sạch sẽ. Tài xế nhiệt tình, chu đáo và đúng giờ Chuyến du lịch của tôi thật tuyệt vời. Cảm ơn Lysontrip!
+                    <span style="font-size:30px;">"</span></p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="testi_item">
+            <div class="testi_item shadow">
               <div class="row">
-                <div class="col-lg-4 col-md-6">
-                  <img src="/templates/news/img/testimonials/t2.jpg" alt="" />
-                </div>
-                <div class="col-lg-8">
+                <div class="col-12">
                   <div class="testi_text">
-                    <h4>Davil Saden</h4>
-                    <p>
-                      Him, made can't called over won't there on divide there
-                      male fish beast own his day third seed sixth seas unto.
-                      Saw from
-                    </p>
+                    <p class="color-secondary" style="font-size:25px;">Anh Nguyễn Văn Luân</p>
+                    <div class="d-flex flex-row reviews justify-content-between">
+                        <span>Khách đặt xe du lịch Lý Sơn</span>
+                        <div class="star color-primary">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="pt-3"><span style="font-size:30px;">"</span>
+                      Một người bạn đã giới thiệu tôi đi xe của Lý Sơn Trip. Tôi đã có một chuyến đi vui vẻ với
+                      anh tài xế thân thiện, giá tiền phù hợp với tôi.
+                    <span style="font-size:30px;">"</span></p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="testi_item">
+            <div class="testi_item shadow">
               <div class="row">
-                <div class="col-lg-4 col-md-6">
-                  <img src="/templates/news/img/testimonials/t1.jpg" alt="" />
-                </div>
-                <div class="col-lg-8">
+                <div class="col-12">
                   <div class="testi_text">
-                    <h4>Elite Martin</h4>
-                    <p>
-                      Him, made can't called over won't there on divide there
-                      male fish beast own his day third seed sixth seas unto.
-                      Saw from
-                    </p>
+                    <p class="color-secondary" style="font-size:25px;">Anh Nguyễn Minh Tài</p>
+                    <div class="d-flex flex-row reviews justify-content-between">
+                        <span>Khách đặt tour du lịch Lý Sơn</span>
+                        <div class="star color-primary">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="pt-3"><span style="font-size:30px;">"</span>
+                      Tôi đã từng đi Lý Sơn 1 lần trước đó nhưng chuyến đi Lý Sơn lần này với Lý Sơn Trip rẻ hơn nhiều 
+                      so với suy nghĩ của tôi.
+                    <span style="font-size:30px;">"</span></p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="testi_item">
+            <div class="testi_item shadow">
               <div class="row">
-                <div class="col-lg-4 col-md-6">
-                  <img src="/templates/news/img/testimonials/t2.jpg" alt="" />
-                </div>
-                <div class="col-lg-8">
+                <div class="col-12">
                   <div class="testi_text">
-                    <h4>Davil Saden</h4>
-                    <p>
-                      Him, made can't called over won't there on divide there
-                      male fish beast own his day third seed sixth seas unto.
-                      Saw from
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="testi_item">
-              <div class="row">
-                <div class="col-lg-4 col-md-6">
-                  <img src="/templates/news/img/testimonials/t1.jpg" alt="" />
-                </div>
-                <div class="col-lg-8">
-                  <div class="testi_text">
-                    <h4>Elite Martin</h4>
-                    <p>
-                      Him, made can't called over won't there on divide there
-                      male fish beast own his day third seed sixth seas unto.
-                      Saw from
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="testi_item">
-              <div class="row">
-                <div class="col-lg-4 col-md-6">
-                  <img src="/templates/news/img/testimonials/t2.jpg" alt="" />
-                </div>
-                <div class="col-lg-8">
-                  <div class="testi_text">
-                    <h4>Davil Saden</h4>
-                    <p>
-                      Him, made can't called over won't there on divide there
-                      male fish beast own his day third seed sixth seas unto.
-                      Saw from
-                    </p>
+                    <p class="color-secondary" style="font-size:25px;">Anh Lê Hồng Phong</p>
+                    <div class="d-flex flex-row reviews justify-content-between">
+                        <span>Khách đặt xe du lịch Lý Sơn</span>
+                        <div class="star color-primary">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="pt-3"><span style="font-size:30px;">"</span>
+                      Tôi đã có 1 chuyến du lịch vui vẻ với gia đình nhờ sử dụng dịch vụ ở Lý Sơn Trip. Nếu có dịp, tôi sẽ quay
+                      lại Lý Sơn.
+                    <span style="font-size:30px;">"</span></p>
                   </div>
                 </div>
               </div>
@@ -231,3 +216,17 @@
       </div>
     </div>
 @stop
+@section('meta')
+<title>Du lịch Lý Sơn giá rẻ</title>
+    <meta name="keywords" content="du lich ly son, am thuc ly son, tour du lich ly son, thue xe du lich ly son" />
+    <meta name="description" content='Du lịch Lý Sơn thật đơn giản với Lý Sơn Trip, thưởng thức ẩm thực Lý Sơn, Tỏi Lý Sơn ' />
+    <meta name="news_keywords" content="du lich ly son, am thuc ly son, tour du lich ly son, thue xe du lich ly son ">
+
+    <meta property="og:title" content="Du lịch Lý Sơn giá rẻ" />
+    <meta property="og:description" content="Du lịch Lý Sơn thật đơn giản với Lý Sơn Trip, thưởng thức ẩm thực Lý Sơn, Tỏi Lý Sơn" />
+    <meta property="og:image" content= "/templates/news/img/du-lich-dao-ly-son-quang-ngai-lysontrip-1.jpg" />
+    <meta property="og:url" itemprop="url" content="{{ route('news.index.aboutus') }}">
+
+    <meta itemprop="name" content="Du lịch Lý Sơn giá rẻ" />
+    <meta itemprop="description" content="Du lịch Lý Sơn thật đơn giản với Lý Sơn Trip, thưởng thức ẩm thực Lý Sơn, Tỏi Lý Sơn" />
+    <meta itemprop="image" content= "/templates/news/img/du-lich-dao-ly-son-quang-ngai-lysontrip-1.jpg" />@endsection

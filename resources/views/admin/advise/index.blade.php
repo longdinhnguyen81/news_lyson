@@ -23,6 +23,7 @@
                   <th>ID</th>
                   <th>Họ và tên</th>
                   <th>Số điện thoại</th>
+                  <th>Dịch vụ</th>
                   <th>Tình trạng:</th>
                   <th style="text-align:center;width:150px">Chức năng</th>
                 </tr>
@@ -33,7 +34,12 @@
                   <td>{{$advise->id}}</td>
                   <td>{{$advise->name}}</td>
                   <td>{{$advise->phone}}</td>
-                  <td id="result-{{ $new->id }}"><a href="javascript:void(0)" onclick="return getActive({{$new->id}})"><img src="/templates/admin/img/icons/{{$new->active == 0?'deactive.png':'active.png'}}" /></a></td>
+                  <td><ul>
+                    @foreach($advise->service as $service)
+                      <li>{{ $service->name }}</li>
+                    @endforeach
+                  </ul></td>
+                  <td id="result-{{ $advise->id }}"><a href="javascript:void(0)" onclick="return getActive({{$advise->id}})"><img src="/templates/admin/img/icons/{{$advise->active == 0?'deactive.png':'active.png'}}" /></a></td>
                   <td class="text-center">
                   	<a onclick="return confirm('Do you want to delete this advise?')" href="{{route('admin.advise.delete', $advise->id)}}" class="btn btn-danger">Xóa</a>
                   </td>
@@ -47,4 +53,24 @@
 </div>
 </div>
 </div>
+<script type="text/javascript">
+    function getActive(id){
+        $.ajax({
+          url: "{{ route('ajax.admin.advise') }}",
+          type: 'GET',
+          cache: false,
+          data: {
+                id: id,
+            },
+          success: function(data){
+            console.log('success')
+            $('#result-'+id).html(data);
+          }, 
+          error: function() {
+           alert("Có lỗi");
+         }
+       }); 
+        return false;
+      }
+</script>
 @stop

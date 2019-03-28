@@ -9,8 +9,8 @@ use App\Model\Advise;
 class AdviseController extends Controller
 {
     public function index(){
-    	$advises = Advise::orderBy('id', 'desc')->get();
-    	return view('admin.Advise.index', compact('advises'));
+    	$advises = Advise::orderBy('id', 'desc')->with('service')->get();
+    	return view('admin.advise.index', compact('advises'));
     }
     public function delete($id){
     	$advises = Advise::find($id);

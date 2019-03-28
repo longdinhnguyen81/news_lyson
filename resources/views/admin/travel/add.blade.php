@@ -43,6 +43,30 @@
 	                </div>
 	              </div>
 	              <div class="control-group">
+	                <label class="control-label">Điểm đi:</label>
+	                <div class="controls">
+	                  <input type="text" name="travel_from" id="required" value="{{ old('travel_from') }}" style="width: 70%" />
+	                </div>
+	              </div>
+	              <div class="control-group">
+	                <label class="control-label">Điểm đến:</label>
+	                <div class="controls">
+	                  <input type="text" name="travel_to" id="required" value="{{ old('travel_to') }}" style="width: 70%" />
+	                </div>
+	              </div>
+	              <div class="control-group">
+	                <label class="control-label">Thời gian(ex:1h30p):</label>
+	                <div class="controls">
+	                  <input type="text" name="time" id="required" value="{{ old('time') }}" style="width: 70%" />
+	                </div>
+	              </div>
+	              <div class="control-group">
+	                <label class="control-label">Khoảng cách(km):</label>
+	                <div class="controls">
+	                  <input type="number" name="distance" id="required" value="{{ old('distance') }}" style="width: 70%" />
+	                </div>
+	              </div>
+	              <div class="control-group">
 	                <label class="control-label">Giá đi ké xe 1 chỗ(không bắt buộc nhập):</label>
 	                <div class="controls">
 	                  <input type="number" name="oneseat" id="required" value="{{ old('oneseat') }}" style="width: 70%" />

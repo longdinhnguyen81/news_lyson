@@ -30,6 +30,7 @@ class NewsController extends Controller
     	]);
     	$news = new Detail([
     		'title' => $request->title,
+    		'slug' => str_slug($request->title),
             'description' => $request->description,
     		'detail' => $request->detail,
     		'user_id' => 1,
@@ -88,6 +89,7 @@ class NewsController extends Controller
         }
 
     	$news->title = $request->title;
+    	$news->slug = str_slug($request->title);
     	$news->keywords = $request->keywords;
     	$news->description = $request->description;
         $news->detail = $request->detail;
@@ -112,6 +114,10 @@ class NewsController extends Controller
         $img_path = $app_path.'/upload/'.$news->img;
         unlink($file_path);
         unlink($img_path);
+        $tags = Detailtag::where('detail_id', $news->id)->get();
+        foreach($tags as $tag){
+            $tag->delete();
+        }
     	$news->delete();
     	return redirect(route('admin.news.index'))->with('msg', 'Xoá thành công');
     }

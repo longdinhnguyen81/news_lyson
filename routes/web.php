@@ -19,12 +19,20 @@ Route::namespace('News')->group(function(){
 		'uses' => 'IndexController@index',
 		'as' => 'news.index.index'
 	]);
+	Route::post('call', [
+		'uses' => 'IndexController@call',
+		'as' => 'news.index.call'
+	]);
 	Route::get('gioi-thieu', [
 		'uses' => 'IndexController@aboutus',
 		'as' => 'news.index.aboutus'
 	]);
 	Route::get('lien-he', [
 		'uses' => 'IndexController@contact',
+		'as' => 'news.index.contact'
+	]);
+	Route::post('lien-he', [
+		'uses' => 'IndexController@postContact',
 		'as' => 'news.index.contact'
 	]);
 	Route::get('tours-du-lich', [
@@ -43,14 +51,27 @@ Route::namespace('News')->group(function(){
 		'uses' => 'CarController@detail',
 		'as' => 'news.car.detail'
 	]);
-	Route::get('/blog/{slug}-{id}', [
+	Route::get('blog', [
 		'uses' => 'NewsController@news',
 		'as' => 'news.news.news'
+	]);
+	Route::get('tim-kiem', [
+		'uses' => 'NewsController@search',
+		'as' => 'news.news.search'
+	]);
+	Route::get('tin-tuc/{slug}', [
+		'uses' => 'NewsController@tag',
+		'as' => 'news.news.tag'
 	]);
 	Route::get('{slug}-{id}.html', [
 		'uses' => 'NewsController@detail',
 		'as' => 'news.news.detail'
 	]);
+	Route::get('sitemap.xml', [
+		'uses' => 'IndexController@sitemap',
+		'as' => 'news.index.sitemap'
+	]);
+
 });
 
 Route::namespace('Auth')->group(function(){
@@ -80,6 +101,14 @@ Route::namespace('Ajax')->group(function(){
 	Route::get('travel', [
 		'uses' => 'AdminController@travel',
 		'as' => 'ajax.admin.travel'
+	]);
+	Route::get('advise', [
+		'uses' => 'AdminController@advise',
+		'as' => 'ajax.admin.advise'
+	]);
+	Route::get('countcall', [
+		'uses' => 'AdminController@call',
+		'as' => 'ajax.admin.call'
 	]);
 });
 

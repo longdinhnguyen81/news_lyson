@@ -3,18 +3,18 @@
 	  <section class="home_banner_area">
       <div class="banner_inner">
         <div class="container">
-          <div class="row">
+          <div class="row my-auto">
             <div class="col-md-8 offset-md-2">
               <div class="text-with-background-opacity banner_content text-center">
-                <p class="text-uppercase">
-                  Công ty TNHH Du lịch Lý Sơn 
+                <p class="text-uppercase mb-2 mt-4">
+                  Công ty TNHH Du lịch Lý Sơn Trip 
                 </p>
-                <h2 class="text-uppercase mt-4 mb-5">
+                <h2 class="text-uppercase mt-4 mb-3">
                   Chào mừng đến với Lý Sơn
                 </h2>
-                <div>
-                  <a href="#" class="primary-btn ml-sm-3 ml-0">Tìm hiểu</a>
-                </div>
+                <p class="mb-4">
+                  Kênh thông tin chính thức của du lịch Lý Sơn, tại đây các bạn có thể tìm thấy các thông tin du lịch, các tin tức nóng hổi cho chuyến du lịch Lý Sơn
+                </p
               </div>
             </div>
           </div>
@@ -24,59 +24,49 @@
     <!--================ End Home Banner Area =================-->
     <!--================ Start Tiện ích =================-->
     <section class="">
-      <div class="container">
-        <div class="row mt-3">
-          <div class="col-lg-3 col-md-6">
-            <div class="single_feature shadow py-3" style="background-color: #fdc632">
-              <div class="row">
-                <div class="col-4 my-auto pl-0 color-secondary">
-                  <i class="fas fa-building" style="font-size:40px;padding-left:0px"></i>
-                </div>
-                <div class="col-8 pl-1 my-auto mx-auto">
-                  <div class="desc">
-                    <h4 class="">Khách sạn</h4>
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 mt-4">
+                <div class="shadow p-3 card-icon">
+                  <div class="icon text-center"><i class="fas fa-building icon-custom"></i></div>
+                  <div class="desc text-center">
+                    <p class="mt-3 mb-2 text-with-divider">Khách sạn</p>
+                    <p>
+                      khách sạn giá rẻ, code giảm giá tại Lý Sơn
+                    </p>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="single_feature shadow py-3" style="background-color: #fdc632">
-              <div class="row">
-                <div class="col-4 my-auto pl-0 color-secondary">
-                  <i class="fas fa-plane-departure" style="font-size:40px;padding-left:0px;"></i>
-                </div>
-                <div class="col-8 pl-1 my-auto mx-auto">
-                  <div class="desc">
-                    <h4 class="">Máy Bay</h4>
+              <div class="col-lg-3 col-md-6 mt-4">
+                <div class="shadow p-3 card-icon">
+                  <div class="icon text-center"><i class="fas fa-plane-departure icon-custom"></i></div>
+                  <div class="desc text-center">
+                    <p class="mt-3 mb-2 text-with-divider">Máy bay</p>
+                    <p>
+                      Vé máy bay giá rẻ, thông tin khuyến mãi
+                    </p>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="single_feature shadow py-3" style="background-color: #fdc632">
-              <div class="row">
-                <div class="col-4 my-auto pl-0 color-secondary">
-                  <i class="fas fa-car" style="font-size:40px;padding-left:0px;"></i>
-                </div>
-                <div class="col-8 pl-1 my-auto mx-auto">
-                  <div class="desc">
-                    <h4 class="">Xe ôtô</h4>
+              <div class="col-lg-3 col-md-6 mt-4">
+                <div class="shadow p-3 card-icon">
+                  <div class="icon text-center"><i class="fas fa-car icon-custom"></i></div>
+                  <div class="desc text-center">
+                    <p class="mt-3 mb-2 text-with-divider">Xe du lịch</p>
+                    <p>
+                      Thuê xe du lịch giá rẻ, ưu đãi thuê xe tới Lý Sơn
+                    </p>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="single_feature shadow py-3" style="background-color: #fdc632">
-              <div class="row" >
-                <div class="col-4 my-auto pl-0 color-secondary" >
-                  <i class="fas fa-ship" style="font-size:40px;padding-left:0px;"></i>
-                </div>
-                <div class="col-8 pl-1 my-auto mx-auto">
-                  <div class="desc">
-                    <h4 class="">Tàu Super</h4>
+              <div class="col-lg-3 col-md-6 mt-4">
+                <div class="shadow p-3 card-icon">
+                  <div class="icon text-center"><i class="fas fa-map-marked-alt icon-custom"></i></div>
+                  <div class="desc text-center">
+                    <p class="mt-3 mb-2 text-with-divider">Tàu biển đông</p>
+                    <p>
+                      Vé tàu super biển đông, đi từ cảng Sa Kỳ đến Lý Sơn
+                    </p>
                   </div>
                 </div>
               </div>
@@ -94,11 +84,12 @@
             <div class="main_title">
               <h2 class="mb-3">Các cách di chuyển để đi đến Cảng Sa Kỳ - Đảo Lý Sơn</h2>
               <p>
-                Để đi đến đảo Lý Sơn, các bạn cần phải đi tàu, hoặc máy bay đến Quảng Ngãi, Sân bay Chu Lai, Sân bay Đà Nẵng, sau đó các bạn di chuyển đến cảng Sa Kỳ, tỉnh Quảng Ngãi bằng xe ô tô hoặc xe Khách. Sau đó sẽ đặt vé tàu siêu tốc đi từ cảng Sa Kỳ đến Đảo Lý Sơn.
+                Lý Sơn là một huyện đảo của tỉnh Quảng Ngãi, nằm cách Cảng Sa Kỳ khoảng 30km. Vì thế để di chuyển đến đảo Lý Sơn, các bạn cần phải di chuyển ra cảng Sa Kỳ rồi sau đó bắt tàu Super biển đông để đi ra đảo Lý Sơn
               </p>
-              <p>
-                Dưới đây là các cách thuê xe ô tô và đi xe ké để đến được cảng Sa Kỳ - Đảo Lý Sơn
-              </p>
+              <h3>
+                  <strong>Thông tin thuê xe ô tô và đi xe ké để đến được cảng Sa Kỳ - Đảo Lý Sơn</strong>
+              </h3>
+              <a href="{{ route('news.car.index') }}" class="">Xem tất cả ---></a>
             </div>
           </div>
         </div>
@@ -106,144 +97,31 @@
           <!-- single course -->
           <div class="col-lg-12">
             <div class="owl-carousel active_course">
+              @foreach($cars as $car)
               <div class="single_course">
                 <div class="single_event position-relative">
                   <div class="event_thumb">
-                    <img src="/templates/news/img/san-bay-chu-lai.png" alt="" />
+                    <a href="{{ route('news.car.detail', $car->slug) }}"><img src="/upload/{{ $car->picture }}" alt="{{ $car->title }}" /></a>
                   </div>
                   <div class="event_details p-2">
                     <div class="d-flex mb-4">
-                      <div class="date"><span>47</span>km</div>
+                      <div class="date"><span>{{ $car->distance }}</span>km</div>
 
                       <div class="time-location" style="font-size: 20px;">
                         <p>
-                          Sân Bay Chu Lai
+                          {{ $car->travel_from }}
                         </p>
                         <p>
-                          Cảng Sa Kỳ
+                          {{ $car->travel_to }}
                         </p>
                       </div>
                     </div>
-                    <p>Hướng dẫn di chuyển từ sân Bay Chu Lai đến Cảng Sa Kỳ 47km,...</p>
-                    <a href="thue-xe-chi-tiet.html" class="primary-btn small genric-btn px-4">Xem thêm</a>
+                    <p>{{ str_limit($car->description, 70) }}</p>
+                    <a href="{{ route('news.car.detail', $car->slug) }}" class="primary-btn small genric-btn px-4">Xem thêm</a>
                   </div>
                 </div>
               </div>
-              <div class="single_course">
-                <div class="single_event position-relative">
-                  <div class="event_thumb">
-                    <img src="/templates/news/img/san-bay-da-nang.png" alt="" />
-                  </div>
-                  <div class="event_details p-2">
-                    <div class="d-flex mb-4">
-                      <div class="date"><span>122</span>km</div>
-
-                      <div class="time-location" style="font-size: 20px;">
-                        <p>
-                          Sân bay Đà Nẵng
-                        </p>
-                        <p>
-                          Cảng Sa Kỳ
-                        </p>
-                      </div>
-                    </div>
-                    <p>Sân Bay Chu Lai đi Cảng Sa Kỳ 47km, 1h12p,...</p>
-                    <a href="thue-xe-chi-tiet.html" class="primary-btn small genric-btn px-4">Xem thêm</a>
-                  </div>
-                </div>
-              </div>
-              <div class="single_course">
-                <div class="single_event position-relative">
-                  <div class="event_thumb">
-                    <img src="/templates/news/img/thanh-pho-da-nang.png" alt="" />
-                  </div>
-                  <div class="event_details p-2">
-                    <div class="d-flex mb-4">
-                      <div class="date"><span>47</span>km</div>
-
-                      <div class="time-location" style="font-size: 20px;">
-                        <p>
-                          Thành Phố Đà Nẵng
-                        </p>
-                        <p>
-                          Cảng Sa Kỳ
-                        </p>
-                      </div>
-                    </div>
-                    <p>Sân Bay Chu Lai đi Cảng Sa Kỳ 47km, 1h12p,...</p>
-                    <a href="thue-xe-chi-tiet.html" class="primary-btn small genric-btn px-4">Xem thêm</a>
-                  </div>
-                </div>
-              </div>
-              <div class="single_course">
-                <div class="single_event position-relative">
-                  <div class="event_thumb">
-                    <img src="/templates/news/img/thanh-pho-hoi-an.png" alt="" />
-                  </div>
-                  <div class="event_details p-2">
-                    <div class="d-flex mb-4">
-                      <div class="date"><span>47</span>km</div>
-
-                      <div class="time-location" style="font-size: 20px;">
-                        <p>
-                          Thành Phố Hội An
-                        </p>
-                        <p>
-                          Cảng Sa Kỳ
-                        </p>
-                      </div>
-                    </div>
-                    <p>Sân Bay Chu Lai đi Cảng Sa Kỳ 47km, 1h12p,...</p>
-                    <a href="thue-xe-chi-tiet.html" class="primary-btn small genric-btn px-4">Xem thêm</a>
-                  </div>
-                </div>
-              </div>
-              <div class="single_course">
-                <div class="single_event position-relative">
-                  <div class="event_thumb">
-                    <img src="/templates/news/img/thanh-pho-hue.png" alt="" />
-                  </div>
-                  <div class="event_details p-2">
-                    <div class="d-flex mb-4">
-                      <div class="date"><span>47</span>km</div>
-
-                      <div class="time-location" style="font-size: 20px;">
-                        <p>
-                          Thành Phố Huế
-                        </p>
-                        <p>
-                          Cảng Sa Kỳ
-                        </p>
-                      </div>
-                    </div>
-                    <p>Các đi từ sân Bay Chu Lai đến Cảng Sa Kỳ 47km,...</p>
-                    <a href="thue-xe-chi-tiet.html" class="primary-btn small genric-btn px-4">Xem thêm</a>
-                  </div>
-                </div>
-              </div>
-              <div class="single_course">
-                <div class="single_event position-relative">
-                  <div class="event_thumb">
-                    <img src="/templates/news/img/ga-quang-ngai.png" alt="" />
-                  </div>
-                  <div class="event_details p-2">
-                    <div class="d-flex mb-4">
-                      <div class="date"><span>47</span>km</div>
-
-                      <div class="time-location" style="font-size: 20px;">
-                        <p>
-                          Ga TP Quảng Ngãi
-                        </p>
-                        <p>
-                          Cảng Sa Kỳ
-                        </p>
-                      </div>
-                    </div>
-                    <p>Sân Bay Chu Lai đi Cảng Sa Kỳ 47km, 1h12p,...</p>
-                    <a href="thue-xe-chi-tiet.html" class="primary-btn small genric-btn px-4">Xem thêm</a>
-                  </div>
-                </div>
-              </div>
+              @endforeach
             </div>
           </div>
         </div>
@@ -260,7 +138,7 @@
             <div class="main_title mb-5">
               <h2 class="mb-3">Các thông tin bổ ích trước và trong khi đi du lịch đảo Lý Sơn</h2>
               <p>
-                Replenish man have thing gathering lights yielding shall you
+                Du lịch Lý Sơn chưa bao giờ là khó khăn
               </p>
             </div>
           </div>
@@ -269,18 +147,16 @@
           <div class="col-lg-4 col-md-6">
             <div class="sidebar-wrapper p-4 shadow" style="background-color: #fff">
               <div class="widget widget-categories">
-                <h4 class="widget-title title_decor shadow rounded">5 điều cần biết</h4>
+                <h4 class="widget-title title_decor shadow rounded">5 dịch vụ hot nhất</h4>
 
                 <ul class="list-custom">
-                    <li><a href="tin-tuc-chi-tiet.html">Các cách di chuyển đến đảo Lý Sơn từ A-Z<span class="tip tip-hot">Hot!</span></a></li>
-                    <li><a href="tin-tuc-chi-tiet.html">Cách book khách sạn, vé máy bay, vé tàu và xe rẻ nhất<span class="tip tip-hot">Hot!</span></a></li>
-                    <li><a href="tin-tuc-chi-tiet.html">Giá và giờ tàu ra và vô đảo Lý Sơn</a></li>
-                    <li><a href="tin-tuc-chi-tiet.html">Các thông tin khuyến mãi</a></li>
-                    <li><a href="tin-tuc-chi-tiet.html">Địa điểm cần check-in</a></li>
+                    @foreach($cars as $car)
+                    <li><a href="{{ route('news.car.detail', $car->slug) }}">{{ $car->title }}<span class="tip tip-hot">Hot!</span></a></li>
+                    @endforeach
                 </ul>
               </div><!-- End .widget -->
               <div class="col-lg-12 text-center pt-3">
-                <a href="tin-tuc.html" class="">Xem thêm ---></a>
+                <a href="{{ route('news.car.index') }}" class="">Xem thêm ---></a>
               </div>
             </div>
           </div>
@@ -290,15 +166,17 @@
                 <h4 class="widget-title title_decor shadow rounded">5 kinh nghiệm cần biết</h4>
 
                 <ul class="list-custom">
-                    <li><a href="tin-tuc-chi-tiet.html">Các cách di chuyển đến đảo Lý Sơn từ A-Z<span class="tip tip-hot">Hot!</span></a></li>
-                    <li><a href="tin-tuc-chi-tiet.html">Cách book khách sạn, vé máy bay, vé tàu và xe rẻ nhất<span class="tip tip-hot">Hot!</span></a></li>
-                    <li><a href="tin-tuc-chi-tiet.html">Giá và giờ tàu ra và vô đảo Lý Sơn</a></li>
-                    <li><a href="tin-tuc-chi-tiet.html">Các thông tin khuyến mãi</a></li>
-                    <li><a href="tin-tuc-chi-tiet.html">Địa điểm cần check-in</a></li>
+                    @php $i = 0 @endphp
+                  @foreach($exps->detail as $exp)
+                    @if($i < 5)
+                    <li><a href="{{ route('news.news.detail', ['slug' => str_slug($exp->title), 'id' => $exp->id]) }}">{{ $exp->title }}</a></li>
+                    @php $i++ @endphp
+                    @endif
+                  @endforeach
                 </ul>
               </div><!-- End .widget -->
               <div class="col-lg-12 text-center pt-3">
-                <a href="tin-tuc.html" class="">Xem thêm ---></a>
+                <a href="{{ route('news.news.tag', str_slug($exps->name)) }}" class="">Xem thêm ---></a>
               </div>
             </div>
           </div>
@@ -308,11 +186,9 @@
                 <h4 class="widget-title title_decor shadow rounded">5 bài viết hay nhất</h4>
 
                 <ul class="list-custom">
-                    <li><a href="tin-tuc-chi-tiet.html">Các cách di chuyển đến đảo Lý Sơn từ A-Z<span class="tip tip-hot">Hot!</span></a></li>
-                    <li><a href="tin-tuc-chi-tiet.html">Cách book khách sạn, vé máy bay, vé tàu và xe rẻ nhất<span class="tip tip-hot">Hot!</span></a></li>
-                    <li><a href="tin-tuc-chi-tiet.html">Giá và giờ tàu ra và vô đảo Lý Sơn</a></li>
-                    <li><a href="tin-tuc-chi-tiet.html">Các thông tin khuyến mãi</a></li>
-                    <li><a href="tin-tuc-chi-tiet.html">Địa điểm cần check-in</a></li>
+                  @foreach($news as $new)
+                    <li><a href="{{ route('news.news.detail', ['slug' => str_slug($new->title), 'id' => $new->id]) }}">{{ $new->title }}</a></li>
+                  @endforeach
                 </ul>
               </div><!-- End .widget -->
               <div class="col-lg-12 text-center pt-3">
@@ -333,64 +209,73 @@
             </div>
             <div class="row clock_sec clockdiv" id="clockdiv">
               <div class="col-lg-12">
-                <h1 class="mb-3">Thông tin thuê nhà, Home Stay, và khách sạn ở Lý Sơn</h1>
-                <p>
-                  There is a moment in the life of any aspiring astronomer that
-                  it is time to buy that first telescope. It’s exciting to think
-                  about setting up your own viewing station.
-                  There is a moment in the life of any aspiring astronomer that
-                  it is time to buy that first telescope. It’s exciting to think
-                  about setting up your own viewing station.
+                <h2 class="mb-3 text-white">Lý Sơn Trip, kênh du lịch Online và tổng đài hỗ trợ miễn phí khi du lịch Lý Sơn</h2>
+                <p class="text-white-gray">Chúng tôi là công ty hoạt động đầu tiên để cung cấp các du khách những thông tin
+                 hữu ích nhất khi đi du lịch Lý Sơn. Và chúng tôi còn là một tổng đài thông tin, các tiện ích cung cấp những thông tin, giá trị cho du khách trước và trong chuyến đi Lý Sơn
                 </p>
-              </div>
-              <div class="col clockinner1 clockinner">
-                <a href="">
-                  <h1 class="days">150</h1>
-                  <span class="smalltext">Days</span>
-                </a>
-              </div>
-              <div class="col clockinner clockinner1">
-                <h1 class="hours">23</h1>
-                <span class="smalltext">Hours</span>
-              </div>
-              <div class="col clockinner clockinner1">
-                <h1 class="minutes">47</h1>
-                <span class="smalltext">Mins</span>
+                <p class="text-white-gray">Chúng tôi khai thác các tours du lịch đi đến đảo Lý Sơn với giá rẻ nhất cho các du khách. 
+                Nếu quý khách có thể tìm được những tour du lịch khác giá rẻ hơn, chúng tôi sẽ hoàn lại tiền, và giảm giá</p>
+                <p class="text-white-gray"><strong>Hãy liên hệ với chúng tôi để được nhận các ưu đãi, giảm giá và các thông tin bổ ích liên quan đến</strong></p>
+                <ol class="unordered-list">
+					<li>Thuê xe giá rẻ đi du lịch Lý Sơn</li>
+					<li>Thuê xe giá rẻ đi đến cảng Sa Kỳ</li>
+					<li>Địa điểm check in tại Lý Sơn</li>
+					<li>Mua vé tàu cao tốc đi đảo Lý Sơn</li>
+					<li>Đặt khách sạn giá rẻ tại đảo Lý Sơn</li>
+					<li>Chi tiết tour du lịch giá rẻ tại Lý Sơn</li>
+				</ol>
               </div>
               <div class="col clockinner clockinner1">
-                <h1 class="seconds">59</h1>
-                <span class="smalltext">Secs</span>
+                <span class="hours text-strong">2</span>
+                <span class="smalltext">Chi nhánh</span>
               </div>
-            </div>
-            <div class="row pt-5">
-          <!-- single course -->
-                  
-               
+              <div class="col clockinner clockinner1">
+                <span class="seconds text-strong">12359</span>
+                <span class="smalltext">Khách</span>
+              </div>
+              <div class="col clockinner clockinner1">
+                <span class="minutes text-strong">100%</span>
+                <span class="smalltext">Hài lòng</span>
+              </div>
             </div>
           </div>
+          <!-- Đăng ký ở đây -->
           <div class="col-lg-4 offset-lg-1">
             <div class="register_form">
-              <h3>Đăng ký tư vấn</h3>
+              <h3>Đăng ký tư vấn online</h3>
               <p>Chúng tôi sẽ gọi ngay để tư vấn, hoặc có thể chát online messenger với chúng tôi hoặc hotline miễn phí cuộc gọi đến 1800 0076</p>
+@if(Session::has('msg'))
+  <div class="alert alert-success">{{ Session::get('msg')}}</div>
+@endif
+@if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
               <form
                 class="form_area"
                 id="myForm"
-                action="mail.html"
+                action="{{ route('news.index.call') }}"
                 method="post"
               >
+              {{ csrf_field() }}
                 <div class="row">
                   <div class="col-lg-12 form_group">
                     <input
-                      name="Họ và tên"
+                      name="name"
                       placeholder="Tên của Anh Chị"
-                      required=""
-                      type="text"
+                      required="Bạn chưa nhập Tên"
+                      type="name"
                     />
                     <input
-                      name="tel"
+                      name="phone"
                       placeholder="Số điện thoại"
                       pattern="[0-9]{8,20}"
-                      required=""
+                      required="Bạn chưa nhập số điện thoại"
                       type="tel"
                     />
                     <div class="single-element-widget pt-3 pl-1">
@@ -398,35 +283,35 @@
                       <div class="switch-wrap d-flex justify-content-between">
                         <p>01. Hỏi đáp du lịch Lý Sơn</p>
                         <div class="primary-radio">
-                          <input type="checkbox" id="question_1">
+                          <input type="checkbox" id="question_1" name="service[]" checked value="Hỏi đáp du lịch Lý Sơn">
                           <label for="question_1"></label>
                         </div>
                       </div>
                       <div class="switch-wrap d-flex justify-content-between">
                         <p>02. Thuê xe ôtô đi Cảng Sa Kỳ</p>
                         <div class="primary-radio">
-                          <input type="checkbox" id="question_2">
+                          <input type="checkbox" id="question_2" name="service[]" value="Thuê xe ôtô đi Cảng Sa Kỳ">
                           <label for="question_2"></label>
                         </div>
                       </div>
                       <div class="switch-wrap d-flex justify-content-between">
                         <p>03. Thuê khách sạn tại Lý Sơn</p>
                         <div class="primary-radio">
-                          <input type="checkbox" id="question_3">
+                          <input type="checkbox" id="question_3" name="service[]" value="Thuê khách sạn tại Lý Sơn">
                           <label for="question_3"></label>
                         </div>
                       </div>
                       <div class="switch-wrap d-flex justify-content-between">
                         <p>04. Cách di chuyển đến đảo Lý Sơn </p>
                         <div class="primary-radio">
-                          <input type="checkbox" id="question_4">
+                          <input type="checkbox" id="question_4" name="service[]" value="Cách di chuyển đến đảo Lý Sơn">
                           <label for="question_4"></label>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="col-lg-12 text-center">
-                    <button class="primary-btn">Submit</button>
+                    <button class="primary-btn">Gửi</button>
                   </div>
                 </div>
               </form>
@@ -436,108 +321,97 @@
       </div>
     </div>
 
-    <div class="testimonial_area section_gap py-4 mt-5">
+    <div class="testimonial_area section_gap py-2 mt-2">
       <div class="container">
         <div class="row">
           <div class="testi_slider owl-carousel">
-            <div class="testi_item">
+            <div class="testi_item shadow">
               <div class="row">
-                <div class="col-lg-4 col-md-6">
-                  <img src="/templates/news/img/testimonials/t1.jpg" alt="" />
-                </div>
-                <div class="col-lg-8">
+                <div class="col-12">
                   <div class="testi_text">
-                    <h4>Elite Martin</h4>
-                    <p>
-                      Him, made can't called over won't there on divide there
-                      male fish beast own his day third seed sixth seas unto.
-                      Saw from
-                    </p>
+                    <p class="color-secondary" style="font-size:25px;">Anh Nguyễn Thành Trung</p>
+                    <div class="d-flex flex-row reviews justify-content-between">
+                        <span>Khách đặt xe du lịch Lý Sơn</span>
+                        <div class="star color-primary">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="pt-3"><span style="font-size:30px;">"</span>
+                      Lý Sơn Trip là một dịch vụ tốt, xe ở đây mới, sạch sẽ. Tài xế nhiệt tình, chu đáo và đúng giờ Chuyến du lịch của tôi thật tuyệt vời. Cảm ơn Lysontrip!
+                    <span style="font-size:30px;">"</span></p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="testi_item">
+            <div class="testi_item shadow">
               <div class="row">
-                <div class="col-lg-4 col-md-6">
-                  <img src="/templates/news/img/testimonials/t2.jpg" alt="" />
-                </div>
-                <div class="col-lg-8">
+                <div class="col-12">
                   <div class="testi_text">
-                    <h4>Davil Saden</h4>
-                    <p>
-                      Him, made can't called over won't there on divide there
-                      male fish beast own his day third seed sixth seas unto.
-                      Saw from
-                    </p>
+                    <p class="color-secondary" style="font-size:25px;">Anh Nguyễn Văn Luân</p>
+                    <div class="d-flex flex-row reviews justify-content-between">
+                        <span>Khách đặt xe du lịch Lý Sơn</span>
+                        <div class="star color-primary">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="pt-3"><span style="font-size:30px;">"</span>
+                      Một người bạn đã giới thiệu tôi đi xe của Lý Sơn Trip. Tôi đã có một chuyến đi vui vẻ với
+                      anh tài xế thân thiện, giá tiền phù hợp với tôi.
+                    <span style="font-size:30px;">"</span></p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="testi_item">
+            <div class="testi_item shadow">
               <div class="row">
-                <div class="col-lg-4 col-md-6">
-                  <img src="/templates/news/img/testimonials/t1.jpg" alt="" />
-                </div>
-                <div class="col-lg-8">
+                <div class="col-12">
                   <div class="testi_text">
-                    <h4>Elite Martin</h4>
-                    <p>
-                      Him, made can't called over won't there on divide there
-                      male fish beast own his day third seed sixth seas unto.
-                      Saw from
-                    </p>
+                    <p class="color-secondary" style="font-size:25px;">Anh Nguyễn Minh Tài</p>
+                    <div class="d-flex flex-row reviews justify-content-between">
+                        <span>Khách đặt tour du lịch Lý Sơn</span>
+                        <div class="star color-primary">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="pt-3"><span style="font-size:30px;">"</span>
+                      Tôi đã từng đi Lý Sơn 1 lần trước đó nhưng chuyến đi Lý Sơn lần này với Lý Sơn Trip rẻ hơn nhiều 
+                      so với suy nghĩ của tôi.
+                    <span style="font-size:30px;">"</span></p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="testi_item">
+            <div class="testi_item shadow">
               <div class="row">
-                <div class="col-lg-4 col-md-6">
-                  <img src="/templates/news/img/testimonials/t2.jpg" alt="" />
-                </div>
-                <div class="col-lg-8">
+                <div class="col-12">
                   <div class="testi_text">
-                    <h4>Davil Saden</h4>
-                    <p>
-                      Him, made can't called over won't there on divide there
-                      male fish beast own his day third seed sixth seas unto.
-                      Saw from
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="testi_item">
-              <div class="row">
-                <div class="col-lg-4 col-md-6">
-                  <img src="/templates/news/img/testimonials/t1.jpg" alt="" />
-                </div>
-                <div class="col-lg-8">
-                  <div class="testi_text">
-                    <h4>Elite Martin</h4>
-                    <p>
-                      Him, made can't called over won't there on divide there
-                      male fish beast own his day third seed sixth seas unto.
-                      Saw from
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="testi_item">
-              <div class="row">
-                <div class="col-lg-4 col-md-6">
-                  <img src="/templates/news/img/testimonials/t2.jpg" alt="" />
-                </div>
-                <div class="col-lg-8">
-                  <div class="testi_text">
-                    <h4>Davil Saden</h4>
-                    <p>
-                      Him, made can't called over won't there on divide there
-                      male fish beast own his day third seed sixth seas unto.
-                      Saw from
-                    </p>
+                    <p class="color-secondary" style="font-size:25px;">Anh Lê Hồng Phong</p>
+                    <div class="d-flex flex-row reviews justify-content-between">
+                        <span>Khách đặt xe du lịch Lý Sơn</span>
+                        <div class="star color-primary">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="pt-3"><span style="font-size:30px;">"</span>
+                      Tôi đã có 1 chuyến du lịch vui vẻ với gia đình nhờ sử dụng dịch vụ ở Lý Sơn Trip. Nếu có dịp, tôi sẽ quay
+                      lại Lý Sơn.
+                    <span style="font-size:30px;">"</span></p>
                   </div>
                 </div>
               </div>
@@ -551,7 +425,7 @@
     </div>
 
     <!--================ Start Popular Courses Area =================-->
-    <div class="popular_courses mt-5">
+    {{-- <div class="popular_courses mt-5">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-7">
@@ -560,7 +434,7 @@
               <p>
                 Để đi đến đảo Lý Sơn, các bạn cần phải đi tàu, hoặc máy bay đến Quảng Ngãi, Sân bay Chu Lai, Sân bay Đà Nẵng, sau đó các bạn di chuyển đến cảng Sa Kỳ, tỉnh Quảng Ngãi bằng xe ô tô hoặc xe Khách. Sau đó sẽ đặt vé tàu siêu tốc đi từ cảng Sa Kỳ đến Đảo Lý Sơn
               </p>
-              <a href="#" class="">Xem thêm ---></a>
+              <a href="{{ route('news.tour.index') }}" class="">Xem thêm ---></a>
             </div>
           </div>
         </div>
@@ -675,5 +549,20 @@
           </div>
         </div>
       </div>
-    </div>
-@stop
+    </div> --}}
+@endsection
+@section('meta')
+    <title>Lysontrip | Cẩm nang du lịch Lý Sơn, tiện ích thuê xe, đặt khách sạn vé tàu ở Lý Sơn</title>
+    <meta name="keywords" content="du lich ly son, am thuc ly son, tour du lich ly son, thue xe du lich ly son" />
+    <meta name="description" content='Du lịch Lý Sơn giá rẻ,thưởng thức ẩm thực đặc sản Lý Sơn, và giảm giá khi thuê xe du lịch đi đến cảng Sa Kỳ, thuê xe ô tô đà nẵng, Chu Lai cảng Sa Kỳ ' />
+    <meta name="news_keywords" content="du lich ly son, am thuc ly son, tour du lich ly son, thue xe du lich ly son ">
+
+    <meta property="og:title" content="Lysontrip | Cẩm nang du lịch Lý Sơn, tiện ích thuê xe, đặt khách sạn vé tàu ở Lý Sơn" />
+    <meta property="og:description" content="Du lịch Lý Sơn giá rẻ,thưởng thức ẩm thực đặc sản Lý Sơn, và giảm giá khi thuê xe du lịch đi đến cảng Sa Kỳ, thuê xe ô tô đà nẵng, Chu Lai cảng Sa Kỳ " />
+    <meta property="og:image" content= "/templates/news/img/du-lich-dao-ly-son-quang-ngai-lysontrip-1.jpg" />
+    <meta property="og:url" itemprop="url" content="{{ route('news.index.index') }}">
+
+    <meta itemprop="name" content="Lysontrip | Cẩm nang du lịch Lý Sơn, tiện ích thuê xe, đặt khách sạn vé tàu ở Lý Sơn" />
+    <meta itemprop="description" content="Du lịch Lý Sơn giá rẻ,thưởng thức ẩm thực đặc sản Lý Sơn, và giảm giá khi thuê xe du lịch đi đến cảng Sa Kỳ, thuê xe ô tô đà nẵng, Chu Lai cảng Sa Kỳ " />
+    <meta itemprop="image" content= "/templates/news/img/du-lich-dao-ly-son-quang-ngai-lysontrip-1.jpg" />
+@endsection

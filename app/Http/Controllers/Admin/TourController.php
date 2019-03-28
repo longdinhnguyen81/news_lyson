@@ -17,7 +17,7 @@ class TourController extends Controller
     }
     public function postAdd(Request $request){
     	$request->validate([
-    		'title' => 'required|unique:Tours',
+    		'title' => 'required|unique:tours',
             'description' => 'required',
     		'keywords' => 'required',
     		'detail' => 'required',
@@ -33,7 +33,6 @@ class TourController extends Controller
     	]);
     	$tour = new Tour([
     		'title' => $request->title,
-            'slug' => str_slug($request->title),
             'description' => $request->description,
     		'detail' => $request->detail,
     		'seat' => $request->seat,
@@ -51,6 +50,7 @@ class TourController extends Controller
             $tour->picture = $picture;
         }
     	$tour->keywords = $request->keywords;
+    	$tour->slug = str_slug($request->title);
     	$tour->save();
 
     	return redirect(route('admin.tour.index'))->with('msg', 'Thêm thành công');

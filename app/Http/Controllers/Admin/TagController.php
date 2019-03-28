@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Model\Tag;
-use App\Model\Detail_Tag;
+use App\Model\Detailtag;
 
 class TagController extends Controller
 {
@@ -36,7 +36,7 @@ class TagController extends Controller
     }
     public function postEdit(Request $request,$id){
     	$request->validate([
-    		'name' => 'required|unique:Tag,name,'.$id,
+    		'name' => 'required|unique:tags,name,'.$id,
     	]);
     	$tag = Tag::find($id);
         $tag->name = $request->name;
@@ -46,7 +46,7 @@ class TagController extends Controller
     }
     public function delete($id){
     	$tag = Tag::find($id);
-        $news = Detail_Tag::where('tag_id', $id)->get();
+        $news = Detailtag::where('tag_id', $id)->get();
         foreach ($news as $new) {
             $new->delete();
         }    	

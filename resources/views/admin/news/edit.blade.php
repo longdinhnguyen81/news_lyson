@@ -67,14 +67,7 @@
 			                @endforeach
 			            @else
 			                @foreach($tags as $tag)
-			                	@foreach($news->tag as $new)
-				                	@if($new->id == $tag->id)
-				                  		@php $check = "checked"	@endphp
-				                  	@else
-				                  		@php $check = ""	@endphp
-				                  	@endif
-			                  	@endforeach
-				                  	<label><input type="checkbox" checked="{{ $check }}" name="tag_id[]" value="{{ $tag->id }}" />
+				                  	<label><input type="checkbox" name="tag_id[]" value="{{ $tag->id }}" />
 				                  {{ $tag->name }}</label>
 			                @endforeach
 			            @endif

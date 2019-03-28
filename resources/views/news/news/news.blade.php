@@ -9,8 +9,8 @@
               <div class="banner_content text-center">
                 <h2>Cẩm nang du lịch</h2>
                 <div class="page_link">
-                  <a href="index.html">Home</a>
-                  <a href="about-us.html">About Us</a>
+                  <a href="/">Trang chủ</a>
+                  <a href="">Cẩm nang du lịch</a>
                 </div>
                 <p>Tại đây bạn có thể tìm kiếm tất cả thông tin liên quan về du lịch Đảo Lý Sơn</p>
               </div>
@@ -27,152 +27,38 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div class="blog_left_sidebar">
+                        @foreach($news as $new)
                         <article class="row blog_item">
                             <div class="col-12">
                                 <div class="blog_post">
-                                    <img src="/templates/news/img/blog/main-blog/m-blog-1.jpg" alt="">
+                                    <a href="{{ route('news.news.detail', ['slug' => str_slug($new->title), 'id' => $new->id]) }}"><img src="/upload/{{ $new->picture }}" alt="{{ $new->title }}"></a>
                                     <div class="blog_details">
-                                        <a href="single-blog.html">
-                                            <h2>Astronomy Binoculars A Great Alternative</h2>
+                                        <a href="{{ route('news.news.detail', ['slug' => str_slug($new->title), 'id' => $new->id]) }}">
+                                            <h2>{{ $new->title }}</h2>
                                         </a>
                                         <div class="entry-meta">
-                                            <span><i class="far fa-calendar-alt"></i>June 29, 2018</span>
+                                            <span><i class="far fa-calendar-alt"></i>{{ date_format($new->updated_at,'M d, y') }}</span>
                                             <span><i class="fas fa-user"></i>By <a href="#">Admin</a></span>
                                             <span><i class="far fa-folder-open"></i>
-                                                <a href="#">Fashion</a>,
-                                                <a href="#">Accessories</a>
+                                                @foreach($new->tag as $tag)
+                                                <a href="{{ route('news.news.tag', str_slug($tag->name)) }}">{{ $tag->name }}</a>,
+                                                @endforeach
                                             </span>
                                         </div><!-- End .entry-meta -->
-                                        <p>MCSE boot camps have its supporters and its detractors. Some people do not
-                                            understand why you should have to spend money on boot camp when you can get
-                                            the MCSE study materials yourself at a fraction.</p>
-                                        <a href="single-blog.html" class="blog_btn">View More</a>
+                                        <p>{!! str_limit($new->description, 70) !!}</p>
+                                        <a href="{{ route('news.news.detail', ['slug' => str_slug($new->title), 'id' => $new->id]) }}" class="blog_btn">Chi tiết</a>
                                     </div>
                                 </div>
                             </div>
                         </article>
-                        <article class="row blog_item">
-                            <div class="col-12">
-                                <div class="blog_post">
-                                    <img src="/templates/news/img/blog/main-blog/m-blog-2.jpg" alt="">
-                                    <div class="blog_details">
-                                        <a href="single-blog.html">
-                                            <h2>Astronomy Binoculars A Great Alternative</h2>
-                                        </a>
-                                        <div class="entry-meta">
-                                            <span><i class="far fa-calendar-alt"></i>June 29, 2018</span>
-                                            <span><i class="fas fa-user"></i>By <a href="#">Admin</a></span>
-                                            <span><i class="far fa-folder-open"></i>
-                                                <a href="#">Fashion</a>,
-                                                <a href="#">Accessories</a>
-                                            </span>
-                                        </div><!-- End .entry-meta -->
-                                        <p>MCSE boot camps have its supporters and its detractors. Some people do not
-                                            understand why you should have to spend money on boot camp when you can get
-                                            the MCSE study materials yourself at a fraction.</p>
-                                        <a href="single-blog.html" class="blog_btn">View More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="row blog_item">
-                            <div class="col-12">
-                                <div class="blog_post">
-                                    <img src="/templates/news/img/blog/main-blog/m-blog-3.jpg" alt="">
-                                    <div class="blog_details">
-                                        <a href="single-blog.html">
-                                            <h2>Astronomy Binoculars A Great Alternative</h2>
-                                        </a>
-                                        <div class="entry-meta">
-                                            <span><i class="far fa-calendar-alt"></i>June 29, 2018</span>
-                                            <span><i class="fas fa-user"></i>By <a href="#">Admin</a></span>
-                                            <span><i class="far fa-folder-open"></i>
-                                                <a href="#">Fashion</a>,
-                                                <a href="#">Accessories</a>
-                                            </span>
-                                        </div><!-- End .entry-meta -->
-                                        <p>MCSE boot camps have its supporters and its detractors. Some people do not
-                                            understand why you should have to spend money on boot camp when you can get
-                                            the MCSE study materials yourself at a fraction.</p>
-                                        <a href="single-blog.html" class="blog_btn">View More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="row blog_item">
-                            <div class="col-12">
-                                <div class="blog_post">
-                                    <img src="/templates/news/img/blog/main-blog/m-blog-4.jpg" alt="">
-                                    <div class="blog_details">
-                                        <a href="single-blog.html">
-                                            <h2>Astronomy Binoculars A Great Alternative</h2>
-                                        </a>
-                                        <div class="entry-meta">
-                                            <span><i class="far fa-calendar-alt"></i>June 29, 2018</span>
-                                            <span><i class="fas fa-user"></i>By <a href="#">Admin</a></span>
-                                            <span><i class="far fa-folder-open"></i>
-                                                <a href="#">Fashion</a>,
-                                                <a href="#">Accessories</a>
-                                            </span>
-                                        </div><!-- End .entry-meta -->
-                                        <p>MCSE boot camps have its supporters and its detractors. Some people do not
-                                            understand why you should have to spend money on boot camp when you can get
-                                            the MCSE study materials yourself at a fraction.</p>
-                                        <a href="single-blog.html" class="blog_btn">View More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="row blog_item">
-                            <div class="col-12">
-                                <div class="blog_post">
-                                    <img src="/templates/news/img/blog/main-blog/m-blog-5.jpg" alt="">
-                                    <div class="blog_details">
-                                        <a href="single-blog.html">
-                                            <h2>Astronomy Binoculars A Great Alternative</h2>
-                                        </a>
-                                        <div class="entry-meta">
-                                            <span><i class="far fa-calendar-alt"></i>June 29, 2018</span>
-                                            <span><i class="fas fa-user"></i>By <a href="#">Admin</a></span>
-                                            <span><i class="far fa-folder-open"></i>
-                                                <a href="#">Fashion</a>,
-                                                <a href="#">Accessories</a>
-                                            </span>
-                                        </div><!-- End .entry-meta -->
-                                        <p>MCSE boot camps have its supporters and its detractors. Some people do not
-                                            understand why you should have to spend money on boot camp when you can get
-                                            the MCSE study materials yourself at a fraction.</p>
-                                        <a href="single-blog.html" class="blog_btn">View More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
+                        @endforeach
                         <nav class="blog-pagination justify-content-center d-flex">
                             <ul class="pagination">
-                                <li class="page-item">
-                                    <a href="#" class="page-link" aria-label="Previous">
-                                        <span aria-hidden="true">
-                                            <i class="ti-angle-left"></i>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="page-item"><a href="#" class="page-link">01</a></li>
-                                <li class="page-item active"><a href="#" class="page-link">02</a></li>
-                                <li class="page-item"><a href="#" class="page-link">03</a></li>
-                                <li class="page-item"><a href="#" class="page-link">04</a></li>
-                                <li class="page-item"><a href="#" class="page-link">09</a></li>
-                                <li class="page-item">
-                                    <a href="#" class="page-link" aria-label="Next">
-                                        <span aria-hidden="true">
-                                            <i class="ti-angle-right"></i>
-                                        </span>
-                                    </a>
-                                </li>
+                                {{ $news->links() }}
                             </ul>
                         </nav>
                     </div>
                 </div>
-                
                 @include('templates.news.rightbar')
             </div>
         </div>
@@ -181,3 +67,18 @@
 
     
 @stop
+
+@section('meta')
+<title>Du lịch Lý Sơn giá rẻ</title>
+    <meta name="keywords" content="du lich ly son, am thuc ly son, tour du lich ly son, thue xe du lich ly son" />
+    <meta name="description" content='Du lịch Lý Sơn thật đơn giản với Lý Sơn Trip, thưởng thức ẩm thực Lý Sơn, Tỏi Lý Sơn ' />
+    <meta name="news_keywords" content="du lich ly son, am thuc ly son, tour du lich ly son, thue xe du lich ly son ">
+
+    <meta property="og:title" content="Du lịch Lý Sơn giá rẻ" />
+    <meta property="og:description" content="Du lịch Lý Sơn thật đơn giản với Lý Sơn Trip, thưởng thức ẩm thực Lý Sơn, Tỏi Lý Sơn" />
+    <meta property="og:image" content= "/templates/news/img/du-lich-dao-ly-son-quang-ngai-lysontrip-1.jpg" />
+    <meta property="og:url" itemprop="url" content="{{ route('news.news.news') }}">
+
+    <meta itemprop="name" content="Du lịch Lý Sơn giá rẻ" />
+    <meta itemprop="description" content="Du lịch Lý Sơn thật đơn giản với Lý Sơn Trip, thưởng thức ẩm thực Lý Sơn, Tỏi Lý Sơn" />
+    <meta itemprop="image" content= "/templates/news/img/du-lich-dao-ly-son-quang-ngai-lysontrip-1.jpg" />@endsection

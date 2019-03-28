@@ -2,7 +2,7 @@
 @section('content')
 <div id="content">
   <div id="content-header">
-    <div id="breadcrumb"> <a href="{{route('admin.index.index')}}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Trang chủ</a> <a href="{{route('admin.travel.index')}}">Quản lý dịch vụ</a> <a href="" class="current">Thêm dịch vụ</a> </div>
+    <div id="breadcrumb"> <a href="{{route('admin.index.index')}}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Trang chủ</a> <a href="{{route('admin.travel.index')}}">Quản lý dịch vụ</a> <a href="" class="current">Sửa dịch vụ</a> </div>
     <h1>Quản lý dịch vụ</h1>
   </div>
   <div class="container-fluid"><hr>
@@ -19,7 +19,7 @@
 		@endif
         <div class="widget-box">
           <div class="widget-title"> <span class="icon"> <i class="icon-info-sign"></i> </span>
-            <h5>Thêm dịch vụ</h5>
+            <h5>Sửa dịch vụ</h5>
           </div>
 	          <div class="widget-content nopadding">
 	            <form class="form-horizontal" method="post" action="{{route('admin.travel.edit', $travel->id)}}" name="number_validate" id="number_validate" novalidate="novalidate" enctype="multipart/form-data">
@@ -40,6 +40,30 @@
 	                <label class="control-label">Mô tả:</label>
 	                <div class="controls">
 	                  <textarea name="description" style="width: 70%;height: 80px" >{{ $travel->description }} </textarea>
+	                </div>
+	              </div>
+	              <div class="control-group">
+	                <label class="control-label">Điểm đi:</label>
+	                <div class="controls">
+	                  <input type="text" name="travel_from" id="required" value="{{ $travel->travel_from }}" style="width: 70%" />
+	                </div>
+	              </div>
+	              <div class="control-group">
+	                <label class="control-label">Điểm đến:</label>
+	                <div class="controls">
+	                  <input type="text" name="travel_to" id="required" value="{{ $travel->travel_to }}" style="width: 70%" />
+	                </div>
+	              </div>
+	              <div class="control-group">
+	                <label class="control-label">Thời gian(ex:1h30p):</label>
+	                <div class="controls">
+	                  <input type="text" name="time" id="required" value="{{ $travel->time }}" style="width: 70%" />
+	                </div>
+	              </div>
+	              <div class="control-group">
+	                <label class="control-label">Khoảng cách(km):</label>
+	                <div class="controls">
+	                  <input type="number" name="distance" id="required" value="{{ $travel->distance }}" style="width: 70%" />
 	                </div>
 	              </div>
 	              @php
@@ -121,7 +145,7 @@
 	              	</div>
 	              </div>
 	              <div class="form-actions">
-	                <input type="submit" value="Thêm" class="btn btn-success">
+	                <input type="submit" value="Sửa" class="btn btn-success">
 	              </div>
 	            </form>
 	          </div>

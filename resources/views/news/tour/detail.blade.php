@@ -7,11 +7,11 @@
           <div class="row justify-content-center">
             <div class="col-lg-6">
               <div class="banner_content text-center text-with-background-opacity">
-                <h1>Combo du lịch Lý Sơn xuất phát từ Đà Nẵng Siêu rẻ </h1>
+                <h2>Combo du lịch Lý Sơn siêu rẻ </h2>
                 <div class="page_link">
                   <a href="index.html">Trang Chủ</a>
                   <a href="courses.html">Tours Du Lịch</a>
-                  <a href="course-details.html">Sân bay Chu Lai - Cảng Sa Kỳ</a>
+                  <a href="course-details.html">{{ $tour->title }}</a>
                 </div>
               </div>
             </div>
@@ -27,22 +27,17 @@
             <div class="row">
                 <div class="col-lg-8 course_details_left">
                     <div class="main_image">
-                        <img class="img-fluid" src="/templates/news/img/dao-be-ly-son.png" alt="">
+                        <img class="img-fluid" src="/upload/{{$tour->picture}}" alt="{{$tour->title}}">
                     </div>
                     <div class="content_wrapper mt-3">
-                        <h1>Du lịch Lý Sơn 2 ngày 1 đêm đi từ Đà Nẵng</h1>
+                        <h1>{{$tour->title}}</h1>
                         <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore
-                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                            ut aliquip ex ea
+                            {{$tour->description}}
                         </div>
-                        <h4 class="title">Chi tiết du lịch</h4>
+                        <!-- Thông tin chuyến du lịch - Dữ liệu dynamic -->
+                        <h2 class="title">Chi tiết chuyến đi</h2>
                         <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore
-                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                            ut aliquip ex ea
+                            {!! $tour->detail !!}
                             <div class="right-contents col-lg-8 offset-lg-2">
                                 <ul>
                                     <li>
@@ -103,16 +98,56 @@
                             </div>
                             <center><a href="#" class="genric-btn danger circle">Gọi hotline Free 1800 0079</a></center>
                         </div>
-                        <h4 class="title">Đảo Lý Sơn</h4>
+                        <!-- End Thông tin chuyến du lịch - Dữ liệu dynamic -->
+                        <!--Giới thiệu đảo - Dữ liệu static -->
+                        <h2 class="title">Giới thiệu địa điểm check-in tại Lý Sơn</h2>
                         <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore
-                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                            ut aliquip ex ea
-                            commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum. Lorem ipsum dolor sit
+                            <p>Lý Sơn - Một huyện đảo trực thuộc tỉnh Quảng Ngãi - Được du khách ưu ái ví von như đảo “Jeju của Việt Nam” 
+                            bởi cảnh sắc đẹp yên bình, nên thơ. Và đặc biệt, đây cũng là nơi cho ra đời những bức ảnh lung linh cực chất
+                            xuất hiện trong mỗi chuyến du hí nơi đây của các bạn trẻ trên khắp mạng xã hội. 
+                            Chỉ với một thao tác đơn giản - Tìm kiếm hình ảnh theo hastag #lyson, bạn đã có thể chiêm ngưỡng hàng ngàn bức ảnh
+                            đẹp được check-in tại “vương quốc tỏi” với những góc chụp lung linh, không chê vào đâu được. Và dưới đây là các điểm check-in
+                            đắt giá nhất được Lysontrip chọn lựa và gợi ý cho bạn cho chuyến du lịch của các bạn. Hãy lưu lại nhé
+                            </p>
+                            <div class="row">
+                              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 pt-2">
+                                <img src="/templates/news/img/du-lich-dao-ly-son-quang-ngai-lysontrip-1.jpg" class="img-fluid" alt="huyen dao ly son tu tren cao">
+                                <p class="sub-image text-center">01 Huyện đảo Lý Sơn từ trên cao</p>
+                              </div>
+                              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 pt-2">
+                                <img src="/templates/news/img/du-lich-dao-ly-son-quang-ngai-lysontrip-2.jpg" class="img-fluid" alt="cong to vo ly son trip">
+                                <p class="sub-image text-center">02 Cổng Tò Vò trong ánh hoàng hôn</p>
+                              </div>
+                              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 pt-2">
+                                <img src="/templates/news/img/du-lich-dao-ly-son-quang-ngai-lysontrip-3.jpg" class="img-fluid" alt="dinh thoi loi ly son trip">
+                                <p class="sub-image text-center">03 toàn cảnh Lý Sơn từ Đinh Thới Lới</p>
+                              </div>
+                              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 pt-2">
+                                <img src="/templates/news/img/du-lich-dao-ly-son-quang-ngai-lysontrip-4.jpg" class="img-fluid" alt="canh dong toi ly son trip">
+                                <p class="sub-image text-center">04 cánh đông tỏi</p>
+                              </div>
+                              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 pt-2">
+                                <img src="/templates/news/img/du-lich-dao-ly-son-quang-ngai-lysontrip-5.jpg" class="img-fluid" alt="hon mu cu ly son trip">
+                                <p class="sub-image text-center">05 Hòn Mù Cu -  ngọn hải đăng</p>
+                              </div>
+                              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 pt-2">
+                                <img src="/templates/news/img/du-lich-dao-ly-son-quang-ngai-lysontrip-6.jpg" class="img-fluid" alt="dao be ly son trip">
+                                <p class="sub-image text-center">06 Đảo bé-  đảo Ly Sơn </p>
+                              </div>
+                            </div>
+                            <p></p>
+                            <p>Với vị trí tuyệt đẹp “tựa sơn, hướng hải” - Chùa Đục tọa lạc ngay giữa sườn núi Giếng Tiềng hướng thẳng ra biển lớn.
+                            Để đến được Chùa Đục, du khách phải vượt qua hơn 100 bậc thang men theo triền núi.
+                            Đường đi tuy có hơi vất vả nhưng khi đã đến được chùa, cảm nhận được “vị” thanh tịnh của nơi cửa Phật,
+                            tìm thấy tâm hồn tự do khi phóng tầm mắt nhìn ra biển, du khách sẽ quên ngay mệt mỏi và cũng không quên
+                            tìm những góc chụp đắt giá cho album ảnh kỷ niệm Lý Sơn của mình.
+                            </p>
+                            <img src="/templates/news/img/du-lich-dao-ly-son-quang-ngai-lysontrip-7.jpg" class="img-fluid" alt="chua duc son trip">
+                                <p class="sub-image text-center">07 Chùa Đục Lý Sơn </p>
                         </div>
-                        <h4 class="title">Xe đưa đón tận nơi an toàn</h4>
+                        <!--End Giới thiệu đảo - Dữ liệu static -->
+                        <!--Giới thiệu xe - Dữ liệu static -->
+                        <h2 class="title">Xe đưa đón tận nơi an toàn</h2>
                         <div class="content">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                             incididunt ut labore et dolore
@@ -139,7 +174,9 @@
                               </div>
                             </div>
                         </div>
-                        <h4 class="title">Tàu cao tốc đi Lý Sơn</h4>
+                        <!--End Giới thiệu xe - Dữ liệu static -->
+                        <!--Giới thiệu tàu cao tốc - Dữ liệu static -->
+                        <h2 class="title">Tàu cao tốc đi cảng Sa Kỳ - Lý Sơn</h2>
                         <div class="content">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                             incididunt ut labore et dolore
@@ -163,7 +200,142 @@
                               </div>
                             </div>
                         </div>
-                        <h4 class="title">Khách sạn Mường Thanh</h4>
+                        <!--End Giới thiệu tàu cao tốc - Dữ liệu static -->
+                        <!--Giới thiệu khách sạn- đổ dữ liểu kiểu select list - Dữ liệu dynamic -->
+                        <!-- Khách sạn muongthanhhotel -->
+                        <h2 class="title">Nghỉ ngơi tại khách sạn Mường Thanh</h2>
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore
+                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea
+                            commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum. Lorem ipsum dolor sit
+                            amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim
+                            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat. Duis aute
+                            irure dolor in reprehenderit in voluptate velit esse cillum.
+                            <div class="row">
+                              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 pt-2">
+                                <img src="/templates/news/img/khach-san-muong-thanh-phong-1.png" class="img-fluid" alt="thue khách sạn du lịch Lý Sơn">
+                                <p class="sub-image text-center">Tiện nghi khách sạn mường thanh</p>
+                              </div>
+                              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 pt-2">
+                                <img src="/templates/news/img/khach-san-muong-thanh-phong-2.png" class="img-fluid" alt="thue khách sạn du lịch Lý Sơn">
+                                <p class="sub-image text-center">Tiện nghi khách sạn mường thanh</p>
+                              </div>
+                              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 pt-2">
+                                <img src="/templates/news/img/khach-san-muong-thanh-phong-3.png" class="img-fluid" alt="thue khách sạn du lịch Lý Sơn">
+                                <p class="sub-image text-center">Tiện nghi khách sạn mường thanh</p>
+                              </div>
+                              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 pt-2">
+                                <img src="/templates/news/img/khach-san-muong-thanh-phong-4.png" class="img-fluid" alt="thue khách sạn du lịch Lý Sơn">
+                                <p class="sub-image text-center">Tiện nghi khách sạn mường thanh</p>
+                              </div>
+                            </div>
+                        </div>
+                        <!-- Khách sạn binhyenmotel -->
+                        <h2 class="title">Nghỉ ngơi tại nhà nghỉ Bình Yên Motel</h2>
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore
+                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea
+                            commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum. Lorem ipsum dolor sit
+                            amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim
+                            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat. Duis aute
+                            irure dolor in reprehenderit in voluptate velit esse cillum.
+                            <div class="row">
+                              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 pt-2">
+                                <img src="/templates/news/img/khach-san-muong-thanh-phong-1.png" class="img-fluid" alt="thue khách sạn du lịch Lý Sơn">
+                                <p class="sub-image text-center">Tiện nghi khách sạn mường thanh</p>
+                              </div>
+                              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 pt-2">
+                                <img src="/templates/news/img/khach-san-muong-thanh-phong-2.png" class="img-fluid" alt="thue khách sạn du lịch Lý Sơn">
+                                <p class="sub-image text-center">Tiện nghi khách sạn mường thanh</p>
+                              </div>
+                              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 pt-2">
+                                <img src="/templates/news/img/khach-san-muong-thanh-phong-3.png" class="img-fluid" alt="thue khách sạn du lịch Lý Sơn">
+                                <p class="sub-image text-center">Tiện nghi khách sạn mường thanh</p>
+                              </div>
+                              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 pt-2">
+                                <img src="/templates/news/img/khach-san-muong-thanh-phong-4.png" class="img-fluid" alt="thue khách sạn du lịch Lý Sơn">
+                                <p class="sub-image text-center">Tiện nghi khách sạn mường thanh</p>
+                              </div>
+                            </div>
+                        </div>
+                        <!-- Khách sạn dinhsaumotel -->
+                        <h2 class="title">Nghỉ ngơi tại nhà nghỉ Định Sau Motel</h2>
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore
+                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea
+                            commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum. Lorem ipsum dolor sit
+                            amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim
+                            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat. Duis aute
+                            irure dolor in reprehenderit in voluptate velit esse cillum.
+                            <div class="row">
+                              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 pt-2">
+                                <img src="/templates/news/img/khach-san-muong-thanh-phong-1.png" class="img-fluid" alt="thue khách sạn du lịch Lý Sơn">
+                                <p class="sub-image text-center">Tiện nghi khách sạn mường thanh</p>
+                              </div>
+                              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 pt-2">
+                                <img src="/templates/news/img/khach-san-muong-thanh-phong-2.png" class="img-fluid" alt="thue khách sạn du lịch Lý Sơn">
+                                <p class="sub-image text-center">Tiện nghi khách sạn mường thanh</p>
+                              </div>
+                              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 pt-2">
+                                <img src="/templates/news/img/khach-san-muong-thanh-phong-3.png" class="img-fluid" alt="thue khách sạn du lịch Lý Sơn">
+                                <p class="sub-image text-center">Tiện nghi khách sạn mường thanh</p>
+                              </div>
+                              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 pt-2">
+                                <img src="/templates/news/img/khach-san-muong-thanh-phong-4.png" class="img-fluid" alt="thue khách sạn du lịch Lý Sơn">
+                                <p class="sub-image text-center">Tiện nghi khách sạn mường thanh</p>
+                              </div>
+                            </div>
+                        </div>
+                        <!-- Khách sạn quynhanhmotel -->
+                        <h2 class="title">Nghỉ ngơi tại nhà nghỉ Quỳnh Anh Motel</h2>
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore
+                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea
+                            commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum. Lorem ipsum dolor sit
+                            amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim
+                            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat. Duis aute
+                            irure dolor in reprehenderit in voluptate velit esse cillum.
+                            <div class="row">
+                              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 pt-2">
+                                <img src="/templates/news/img/khach-san-muong-thanh-phong-1.png" class="img-fluid" alt="thue khách sạn du lịch Lý Sơn">
+                                <p class="sub-image text-center">Tiện nghi khách sạn mường thanh</p>
+                              </div>
+                              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 pt-2">
+                                <img src="/templates/news/img/khach-san-muong-thanh-phong-2.png" class="img-fluid" alt="thue khách sạn du lịch Lý Sơn">
+                                <p class="sub-image text-center">Tiện nghi khách sạn mường thanh</p>
+                              </div>
+                              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 pt-2">
+                                <img src="/templates/news/img/khach-san-muong-thanh-phong-3.png" class="img-fluid" alt="thue khách sạn du lịch Lý Sơn">
+                                <p class="sub-image text-center">Tiện nghi khách sạn mường thanh</p>
+                              </div>
+                              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 pt-2">
+                                <img src="/templates/news/img/khach-san-muong-thanh-phong-4.png" class="img-fluid" alt="thue khách sạn du lịch Lý Sơn">
+                                <p class="sub-image text-center">Tiện nghi khách sạn mường thanh</p>
+                              </div>
+                            </div>
+                        </div>
+                        <!-- Khách sạn tientrimotel -->
+                        <h2 class="title">Nghỉ ngơi tại nhà nghỉ Tiên Tri Motel</h2>
                         <div class="content">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                             incididunt ut labore et dolore
@@ -197,136 +369,22 @@
                         </div>
                     </div>
                 </div>
-
-
-                <div class="col-lg-4">
-                    <div class="blog_right_sidebar">
-                        <aside class="single_sidebar_widget search_widget">
-                            <div class="widget widget-categories">
-                                <h4 class="widget-title title_decor shadow">Đặt xe đi Cảng Sa Kỳ</h4>
-                                <ul class="list-custom">
-                                    <li><a href="#">Đặt xe Đà Nẵng đi cảng Sa Kỳ. Giảm ngay <strong>30%</strong> khi đặt luôn chiều về<span class="tip tip-hot">Hot!</span> </a></li>
-                                    <li><a href="#">Thuê xe Hội An đi cảng Sa Kỳ. Giảm ngay <strong>15%</strong> khi đặt luôn chiều về<span class="tip tip-hot">Hot!</span> </a></li>
-                                    <li><a href="#">Thuê xe Sân bay Chu Lai đi cảng Sa Kỳ. Giảm ngay <strong>30%</strong> khi đặt luôn chiều về</a></li>
-                                    <li><a href="#">Thuê xe Sân bay Đà Nẵng đi cảng Sa Kỳ. Giảm ngay <strong>30%</strong> khi đặt luôn chiều về<span class="tip tip-hot">Hot!</span> </a></li>
-                                </ul>
-                            </div><!-- End .widget -->
-                            <div class="widget widget-categories mt-5">
-                                <h4 class="widget-title title_decor shadow">5 điều cần biết</h4>
-
-                                <ul class="list-custom">
-                                    <li><a href="#">Các cách di chuyển đến đảo Lý Sơn từ A-Z<span class="tip tip-hot">Hot!</span></a></li>
-                                    <li><a href="#">Cách book khách sạn, vé máy bay, vé tàu và xe rẻ nhất<span class="tip tip-hot">Hot!</span></a></li>
-                                    <li><a href="#">Giá và giờ tàu ra và vô đảo Lý Sơn</a></li>
-                                    <li><a href="#">Các thông tin khuyến mãi</a></li>
-                                    <li><a href="#">Địa điểm cần check-in</a></li>
-                                </ul>
-                            </div><!-- End .widget -->
-                            
-                            <div class="single_sidebar_widget popular_post_widget mt-5">
-                                <h4 class="widget-title title_decor shadow">Các bài viết nổi bật</h4>
-                                <div class="media post_item">
-                                    <img src="/templates/news/img/blog/popular-post/post1.jpg" alt="post">
-                                    <div class="media-body">
-                                        <a href="blog-details.html">
-                                            <h3>Space The Final Frontier</h3>
-                                        </a>
-                                        <p>02 Hours ago</p>
-                                    </div>
-                                </div>
-                                <div class="media post_item">
-                                    <img src="/templates/news/img/blog/popular-post/post2.jpg" alt="post">
-                                    <div class="media-body">
-                                        <a href="blog-details.html">
-                                            <h3>The Amazing Hubble</h3>
-                                        </a>
-                                        <p>02 Hours ago</p>
-                                    </div>
-                                </div>
-                                <div class="media post_item">
-                                    <img src="/templates/news/img/blog/popular-post/post3.jpg" alt="post">
-                                    <div class="media-body">
-                                        <a href="blog-details.html">
-                                            <h3>Astronomy Or Astrology</h3>
-                                        </a>
-                                        <p>03 Hours ago</p>
-                                    </div>
-                                </div>
-                                <div class="media post_item">
-                                    <img src="/templates/news/img/blog/popular-post/post4.jpg" alt="post">
-                                    <div class="media-body">
-                                        <a href="blog-details.html">
-                                            <h3>Asteroids telescope</h3>
-                                        </a>
-                                        <p>01 Hours ago</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="br"></div>
-                            <div class="single_sidebar_widget popular_post_widget mt-5">
-                                <h4 class="widget-title title_decor shadow">Các dịch vụ nổi bật</h4>
-                                <div class="media post_item">
-                                    <img src="/templates/news/img/blog/popular-post/post1.jpg" alt="post">
-                                    <div class="media-body">
-                                        <a href="blog-details.html">
-                                            <h3>Thuê xe ôtô Đà Nẵng Sa Kỳ giá rẻ<span class="tip tip-hot">Hot!</span></h3>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="media post_item">
-                                    <img src="/templates/news/img/blog/popular-post/post2.jpg" alt="post">
-                                    <div class="media-body">
-                                        <a href="blog-details.html">
-                                            <h3>The Amazing Hubble</h3>
-                                        </a>
-                                        <p>02 Hours ago</p>
-                                    </div>
-                                </div>
-                                <div class="media post_item">
-                                    <img src="/templates/news/img/blog/popular-post/post3.jpg" alt="post">
-                                    <div class="media-body">
-                                        <a href="blog-details.html">
-                                            <h3>Astronomy Or Astrology</h3>
-                                        </a>
-                                        <p>03 Hours ago</p>
-                                    </div>
-                                </div>
-                                <div class="media post_item">
-                                    <img src="/templates/news/img/blog/popular-post/post4.jpg" alt="post">
-                                    <div class="media-body">
-                                        <a href="blog-details.html">
-                                            <h3>Asteroids telescope</h3>
-                                        </a>
-                                        <p>01 Hours ago</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="br"></div>
-                            <div class="single_sidebar_widget ads_widget">
-                                <a href="#"><img class="img-fluid" src="/templates/news/img/blog/add.jpg" alt=""></a>
-                            </div>
-                            <div class="br"></div>
-                            <div  class="single-sidebar-widget tag_cloud_widget">
-                                <h4 class="widget_title">Tag Clouds</h4>
-                                <ul class="list">
-                                    <li><a href="#">Technology</a></li>
-                                    <li><a href="#">Fashion</a></li>
-                                    <li><a href="#">Architecture</a></li>
-                                    <li><a href="#">Fashion</a></li>
-                                    <li><a href="#">Food</a></li>
-                                    <li><a href="#">Technology</a></li>
-                                    <li><a href="#">Lifestyle</a></li>
-                                    <li><a href="#">Art</a></li>
-                                    <li><a href="#">Adventure</a></li>
-                                    <li><a href="#">Food</a></li>
-                                    <li><a href="#">Lifestyle</a></li>
-                                    <li><a href="#">Adventure</a></li>
-                                </ul>
-                            </div>
-                        </aside>
-                    </div>
-                </div>
+                @include('templates.news.carbar')
             </div>
         </div>
     </section>
 @stop
+@section('meta')
+<title>Du lịch Lý Sơn giá rẻ</title>
+    <meta name="keywords" content="du lich ly son, am thuc ly son, tour du lich ly son, thue xe du lich ly son" />
+    <meta name="description" content='Du lịch Lý Sơn thật đơn giản với Lý Sơn Trip, thưởng thức ẩm thực Lý Sơn, Tỏi Lý Sơn ' />
+    <meta name="news_keywords" content="du lich ly son, am thuc ly son, tour du lich ly son, thue xe du lich ly son ">
+
+    <meta property="og:title" content="Du lịch Lý Sơn giá rẻ" />
+    <meta property="og:description" content="Du lịch Lý Sơn thật đơn giản với Lý Sơn Trip, thưởng thức ẩm thực Lý Sơn, Tỏi Lý Sơn" />
+    <meta property="og:image" content= "/templates/news/img/du-lich-dao-ly-son-quang-ngai-lysontrip-1.jpg" />
+    <meta property="og:url" itemprop="url" content="">
+
+    <meta itemprop="name" content="Du lịch Lý Sơn giá rẻ" />
+    <meta itemprop="description" content="Du lịch Lý Sơn thật đơn giản với Lý Sơn Trip, thưởng thức ẩm thực Lý Sơn, Tỏi Lý Sơn" />
+    <meta itemprop="image" content= "/templates/news/img/du-lich-dao-ly-son-quang-ngai-lysontrip-1.jpg" />@endsection

@@ -23,6 +23,10 @@ class TravelController extends Controller
     		'keywords' => 'required',
     		'detail' => 'required',
     		'picture' => 'required',
+            'travel_from' => 'required',
+            'travel_to' => 'required',
+            'time' => 'required',
+            'distance' => 'required',
     	]);
     	$travel = new Travel([
     		'title' => $request->title,
@@ -34,7 +38,11 @@ class TravelController extends Controller
             $picture =  $path1->store('/', ['disk' => 'upload']);
             $travel->picture = $picture;
         }
+        $travel->distance = $request->distance;
+        $travel->travel_from = $request->travel_from;
+        $travel->travel_to = $request->travel_to;
         $travel->detail = $request->detail;
+        $travel->time = $request->time;
         $travel->keywords = $request->keywords;
     	$travel->save();
     	
@@ -42,12 +50,12 @@ class TravelController extends Controller
     		'seat' => 1,
     		'type' => 'Đi ké xe',
     		'cost' => $request->oneseat,
-    		'travel_id' => $traveCl->id
+    		'travel_id' => $travel->id
     	]);
     	$onecar->save();
     	$fourcar = new Car([
-    		'seat' => 1,
-    		'type' => 'Đi ké xe',
+    		'seat' => 4,
+    		'type' => 'Thuê xe',
     		'cost' => $request->fourseat,
     		'travel_id' => $travel->id
     	]);
@@ -93,6 +101,10 @@ class TravelController extends Controller
             'description' => 'required',
     		'keywords' => 'required',
     		'detail' => 'required',
+            'travel_from' => 'required',
+            'travel_to' => 'required',
+            'time' => 'required',
+            'distance' => 'required',
     	]);
     	$travel = Travel::find($id);
         if($request->file('picture') != null){
@@ -108,6 +120,10 @@ class TravelController extends Controller
     	$travel->keywords = $request->keywords;
     	$travel->description = $request->description;
         $travel->detail = $request->detail;
+        $travel->travel_from = $request->travel_from;
+        $travel->travel_to = $request->travel_to;
+        $travel->time = $request->time;
+        $travel->distance = $request->distance;
     	$travel->update();
         
         $cars = Car::where('travel_id', $id)->get();

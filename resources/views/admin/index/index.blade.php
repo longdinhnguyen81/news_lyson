@@ -19,7 +19,7 @@
 		        <li class="bg_lb"> <a href="{{route('admin.travel.index')}}"> <i class="icon-th-list"></i>Giá xe</a> </li>
 		        <li class="bg_dg"> <a href="{{route('admin.users.index')}}"> <i class="icon-tint"></i>Admin</a> </li>
 		        <li class="bg_lh span5"> <a href="{{route('admin.contact.index')}}"> <i class="icon-signal"></i>Liên hệ</a> </li>
-		        <li class="bg_lv span5"> <a href="{{route('admin.advise.index')}}"> <i class="icon-th"></i><span class="label label-important">10</span>Tư vấn</a> </li>
+		        <li class="bg_lv span5"> <a href="{{route('admin.advise.index')}}"> <i class="icon-th"></i><span class="label label-important">{{ count($advises) }}</span>Tư vấn</a> </li>
 	        </ul>
 	    </div>
 	<!--End-Action boxes-->
@@ -34,31 +34,31 @@
 				<canvas id="myChart" width="100" height="41"></canvas>
             </div>
             <div class="span3">
-              {{-- <ul class="site-stats">
+              <ul class="site-stats">
               	@php
               		$tonguser = 0;
               		$tbuser = 0;
               		$tongpage = 0;
-              		$tbpage = 0;
+              		$tongcall = 0;
               	@endphp
             @foreach($counts as $count)
 	            @php
 	            	$tonguser += $count->author;
 	            	$tongpage += $count->page;
+	            	$tongcall += $count->phone;
             	@endphp
             @endforeach
             	@php
 	            	$tbuser += round($tonguser/ count($counts));
-	            	$tbpage += round($tongpage/ count($counts));
             	@endphp
 
                 <li class="bg_lh"><i class="icon-user"></i> <strong>{{ $tonguser }}</strong> <small>Tổng số người dùng truy cập</small></li>
                 <li class="bg_lh"><i class="icon-plus"></i> <strong>{{ $tbuser }}</strong> <small>Số người dùng trung bình truy cập</small></li>
                 <li class="bg_lh"><i class="icon-shopping-cart"></i> <strong>{{ $tongpage }}</strong> <small>Tổng số trang được truy cập</small></li>
-                <li class="bg_lh"><i class="icon-tag"></i> <strong>{{ $tbpage }}</strong> <small>Trung bình số trang được truy cập</small></li>
+                <li class="bg_lh"><i class="icon-tag"></i> <strong>{{ $tongcall }}</strong> <small>Tổng số cuộc gọi</small></li>
                 <li class="bg_lh"><i class="icon-repeat"></i> <strong>{{ count($new) }}</strong> <small>Số lượng bài viết</small></li>
                 <li class="bg_lh"><i class="icon-globe"></i> <strong>{{ count($contact) }}</strong> <small>Số lượng liên hệ</small></li>
-              </ul> --}}
+              </ul>
             </div>
           </div>
         </div>
@@ -73,10 +73,12 @@
 		var label = [];
 		var pdata = [];
 		var udata = [];
+		var cdata = [];
 		for(var i = 0; i < data.data.length; i++){
 			label.push(data.data[i].day+'-'+data.data[i].month)
 			pdata.push(data.data[i].page)
 			udata.push(data.data[i].author)
+			cdata.push(data.data[i].phone)
 		}
     	var myChart = new Chart(ctx, {
 		    type: 'bar',
@@ -93,6 +95,12 @@
 		            data: pdata,
 		            backgroundColor:'#10C21E',
 		            borderColor:'#0A7812',
+		            borderWidth: 1
+		        },{
+		            label: 'cuộc gọi/ngày',
+		            data: cdata,
+		            backgroundColor:'#F40006',
+		            borderColor:'#CD0005',
 		            borderWidth: 1
 		        }]
 		    },

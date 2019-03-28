@@ -12,10 +12,10 @@ class DetailTag extends Model
     public $fillable = ['detail_id', 'tag_id'];
 
     public function detail(){
-    	return $this->hasMany('App\Model\Detail', 'detail_id');
+    	return $this->belongsTo('App\Model\Detail', 'detail_id');
     }
 
     public function tag(){
-    	return $this->hasMany('App\Model\Tag', 'tag_id');
+    	return $this->belongsTo('App\Model\Tag', 'tag_id');
     }
 }
